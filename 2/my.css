@@ -1,24 +1,107 @@
 .card-wrapper {
-  width: 400px;
-  height: 250px;
-  margin-bottom: 20px;
+    width: 400px;
+    height: 250px;
+    margin-bottom: 20px;
 }
 
 .credit-card {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 /* 正面 */
 .credit-card.front {
-  background-image: url('https://richartweb-tsbank.cdn.hinet.net/TSDIB_RichartWeb/static/revamp/images/img-cards-gogo@2x.png');
+    background-image: url('https://richartweb-tsbank.cdn.hinet.net/TSDIB_RichartWeb/static/revamp/images/img-cards-gogo@2x.png');
 }
 
 /* 背面 */
 .credit-card.back {
-  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIDSX-88qNmyl9dtTDy2xunugTJCnfP-ksFivN_FTP73zHPV-Q5vgBOp172fY29Ne1BLgyLVUzx0x83osX33RsmCmJdXpNQcq9He2JVB6nwVbW-7kQaE1aW_S79zpDIcY5Ay_ThrSeFW0/s1600/%25E5%258D%25A1%25E8%2583%258C.jpg');
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIDSX-88qNmyl9dtTDy2xunugTJCnfP-ksFivN_FTP73zHPV-Q5vgBOp172fY29Ne1BLgyLVUzx0x83osX33RsmCmJdXpNQcq9He2JVB6nwVbW-7kQaE1aW_S79zpDIcY5Ay_ThrSeFW0/s1600/%25E5%258D%25A1%25E8%2583%258C.jpg');
+}
+
+
+.taishin-card-back {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    background-color: black;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    color: white;
+    position: relative;
+}
+
+.disclaimer {
+    font-size: 10px;
+    position: absolute;
+    left: 10px;
+}
+
+.banner {
+    width: 100%;
+    height: 40px;
+    background: gray;
+    position: absolute;
+    top: 20px;
+}
+
+.cardnumber {
+    width: 10%;
+    height: 30px;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+
+}
+.text1{
+    font-size: 10px;
+    position: absolute;
+    top: 80px;
+    left: 90px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top: ;
+}
+
+.expire{
+    font-size: 10px;
+    width:20%;
+    height: 30px;
+    position: absolute;
+    top: 160px;
+    left: 10px;
+    
+}
+.logo1{
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    left: 95px;
+    top: 150px
+}
+.uuu{
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    left: 170px;
+    top: 200px
+}
+.logo2{
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    left: 260px;
+    top: 200px
+}
+.logo3{
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    left: 340px;
+    top:80px;
 }
