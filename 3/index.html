@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flex_導覽列</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 40px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .logo i {
+            font-size: 24px;
+            background-color: black;
+            color: white;
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        .txt ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        .txt ul li {
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .txt ul li:first-child {
+            color: gray;
+            /* Home */
+        }
+
+        .txt ul li:not(:first-child) {
+            color: #0366ff;
+            /* 其他藍色 */
+        }
+
+        .button input[type="button"] {
+            padding: 6px 12px;
+            font-size: 14px;
+            margin-left: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            border: 1px solid #0366ff;
+            background-color: transparent;
+            color: #0366ff;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .button input[type="button"]:last-child {
+            background-color: #0366ff;
+            color: white;
+            border: 1px solid #0366ff;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <nav>
+        <div class="logo">
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="txt">
+            <ul>
+                <li>Home</li>
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>FAQs</li>
+                <li>About</li>
+            </ul>
+        </div>
+        <div class="button">
+            <input type="button" value="Login">
+            <input type="button" value="Sing-up">
+        </div>
+    </nav>
+
 </body>
+
 </html>
